@@ -13,7 +13,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon  ,HamburgerIcon} from "@chakra-ui/icons";
-const Links = ["Home", "About", "Projects"];
+const Links = ["home", "about", "work"];
 const NavLink = ({ children }) => (
   <Link
     px={2}
@@ -23,7 +23,7 @@ const NavLink = ({ children }) => (
       textDecoration: "none",
       bg: useColorModeValue("gray.200", "gray.700"),
     }}
-    href={"#"}
+    href={children}
   >
     {children}
   </Link>
@@ -65,19 +65,19 @@ export default function Navbar() {
                 />
                 <MenuList>
                   <Link href="/" ml="">
-                    <MenuItem>HOME</MenuItem>
+                    <MenuItem>home</MenuItem>
                   </Link>
                   <Link href="/about" passHref>
-                    <MenuItem>ABOUT</MenuItem>
+                    <MenuItem>about</MenuItem>
                   </Link>
                   <Link href="/work" passHref>
-                    <MenuItem>WORKS</MenuItem>
+                    <MenuItem>work</MenuItem>
                   </Link>
                   <Link
                     href="https://drive.google.com/file/d/1I6xWNMNJLKV6A_qhthHE5YbBKcKzJ5vU/view?usp=sharing"
                     target="_blank"
                   >
-                    <MenuItem>MyCV</MenuItem>
+                    <MenuItem>farhan's CV</MenuItem>
                   </Link>
                 </MenuList>
               </Menu>
