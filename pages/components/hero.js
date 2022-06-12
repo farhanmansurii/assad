@@ -9,35 +9,37 @@ import Spline from "@splinetool/react-spline";
 
 import dynamic from "next/dynamic";
 
-
 export default function Hero() {
   return (
     <>
-      <Text
-        mt="1rem"
-        mb="3rem"
-        pt="0.5rem"
-        pb="0.3rem"
-        align="center"
-        borderRadius="xl"
-        bg={useColorModeValue("#ffb07b", "#cf4c2e")}
-        color={useColorModeValue("#fffef8", "#141414")}
-        mx="20%"
-        fontSize="lg"
-        fontFamily="Founders Grotesk"
-      >
-        hi I&apos;m a web developer based in Mumbai , India
-      </Text>
+      <Flex justify="center" mx="5%">
+        <Text
+          mt="1rem"
+          mb="3rem"
+          px="2rem"
+          pt="0.5rem"
+          pb="0.5rem"
+          align="center"
+          borderRadius="2xl"
+          bg={useColorModeValue("#ffb07b", "#cf4c2e")}
+          color={useColorModeValue("#fffef8", "#141414")}
+          fontSize={["xs", "sm", "sm", "md"]}
+        >
+          hi I&apos;m a web developer based in Mumbai , India
+        </Text>
+      </Flex>
       <Container
+       
+        w="90%"
         centerContent
         display="flex"
         flexDirection={{ base: "column-reverse", md: "row" }}
+        justifyContent='space-around'
       >
         <Flex direction="column " w="100%" p="1rem">
           <Text
             fontWeight="light"
-            fontSize={["6xl", "6xl", "6xl", "6xl"]}
-            fontFamily="Ogg"
+            fontSize={["3xl", "4xl", "5xl", "6xl"]}
             textTransform="capitalize"
             lineHeight={0.9}
           >
@@ -48,7 +50,7 @@ export default function Hero() {
             <Text
               py={3}
               fontSize="10px"
-              fontWeight="extrabold"
+              fontWeight="bold"
               textTransform="uppercase"
               letterSpacing="1px"
               color={useColorModeValue("#94B49F", "ffb07b")}
@@ -58,8 +60,7 @@ export default function Hero() {
             </Text>
 
             <Text
-              fontSize="lg"
-              fontFamily="Founders Grotesk"
+              fontSize={["sm", "sm", "md", "lg"]}
               textTransform="lowercase"
               lineHeight={1}
             >
@@ -68,9 +69,14 @@ export default function Hero() {
             </Text>
           </Flex>
         </Flex>
-        <Container h="300px" w="244px" justify="center" mt="1rem">
-        <Spline scene="https://prod.spline.design/mJlnC1uULdyCH65m/scene.splinecode" />
-
+        <Container
+          h="250px"
+          w="244px"
+          justify="center"
+          mt="1rem"
+         
+        >
+          <Spline scene="https://prod.spline.design/mJlnC1uULdyCH65m/scene.splinecode" />
         </Container>
       </Container>
     </>
