@@ -77,7 +77,7 @@ export default function Navbar() {
                     href="https://drive.google.com/file/d/1I6xWNMNJLKV6A_qhthHE5YbBKcKzJ5vU/view?usp=sharing"
                     target="_blank"
                   >
-                    <MenuItem>farhan's CV</MenuItem>
+                    <MenuItem>farhan&apos;s CV</MenuItem>
                   </Link>
                 </MenuList>
               </Menu>
