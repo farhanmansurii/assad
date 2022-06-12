@@ -5,16 +5,16 @@ import {
   Container,
   Button,
 } from "@chakra-ui/react";
+import Spline from "@splinetool/react-spline";
 
 import dynamic from "next/dynamic";
-const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: false,
-});
+
+
 export default function Hero() {
   return (
     <>
       <Text
-        mt="5rem"
+        mt="1rem"
         mb="3rem"
         pt="0.5rem"
         pb="0.3rem"
@@ -69,7 +69,8 @@ export default function Hero() {
           </Flex>
         </Flex>
         <Container h="300px" w="244px" justify="center" mt="1rem">
-          <Spline scene="https://prod.spline.design/mJlnC1uULdyCH65m/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/mJlnC1uULdyCH65m/scene.splinecode" />
+
         </Container>
       </Container>
     </>
