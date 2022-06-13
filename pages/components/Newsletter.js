@@ -20,12 +20,13 @@ import {
           p={10}
           spacing={8}
           align={"center"}
+          w='lg'
         >
           <Stack align={"center"} spacing={2}>
-            <Text textTransform={"uppercase"} fontSize={"3xl"} fontFamily="Ogg">
+            <Text textTransform={"uppercase"} fontSize={["lg", "xl", "2xl", "3xl"]} >
               Subscribe
             </Text>
-            <Text fontSize={"lg"} fontFamily="Founders Grotesk">
+            <Text fontSize={["sm", "sm", "md", "lg"]} >
               Subscribe to my newsletter & stay up to date with my upcoming
               projects and alerts from me !
             </Text>

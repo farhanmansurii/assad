@@ -42,13 +42,13 @@ import {
                         md: "4xl",
                         lg: "5xl",
                       }}
-                      fontFamily="Ogg"
+                      
                       textTransform="uppercase"
                       align="center"
                     >
                       Contact
                     </Text>
-                    <Text fontFamily="Ogg" mt={{ sm: 3, md: 3, lg: 5 }}>
+                    <Text  mt={{ sm: 3, md: 3, lg: 5 }}>
                       Fill up the form below to contact
                     </Text>
                     <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
@@ -56,7 +56,7 @@ import {
                         pl={0}
                         spacing={3}
                         alignItems="flex-start"
-                        fontFamily="Founders Grotesk"
+                        
                         color={useColorModeValue("#00453d", "#9c795d")}
                         fontWeight="light"
                       >
@@ -127,7 +127,7 @@ import {
                 <WrapItem>
                   <Box bg="black.300" borderRadius="lg">
                     <Box m={8}>
-                      <VStack spacing={5} fontFamily="Ogg">
+                      <VStack spacing={5} >
                         <FormControl id="name">
                           <FormLabel>Your Name</FormLabel>
                           <InputGroup>
@@ -145,7 +145,7 @@ import {
                         <FormControl id="name">
                           <FormLabel>Message</FormLabel>
                           <Textarea
-                            fontFamily="Founders Grotesk"
+                            
                             placeholder="message"
                             _placeholder={{
                               color: useColorModeValue("#aa9a8a", "#9c795d"),
