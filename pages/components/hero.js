@@ -6,12 +6,6 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-import { SpinnerRoundFilled } from "spinners-react";
-
-import dynamic from "next/dynamic";
-
-import Spline from "@splinetool/react-spline";
-
 export default function Hero() {
   return (
     <>
