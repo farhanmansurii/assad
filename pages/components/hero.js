@@ -6,13 +6,14 @@ import {
   Button,
 } from "@chakra-ui/react";
 import Spline from "@splinetool/react-spline";
+import { SpinnerRoundFilled } from "spinners-react";
 
 import dynamic from "next/dynamic";
 
 export default function Hero() {
   return (
     <>
-      <Flex justify="center" mx="5%"  mt='4rem'>
+      <Flex justify="center" mx="5%" mt="4rem">
         <Text
           mt="1rem"
           mb="3rem"
@@ -29,12 +30,11 @@ export default function Hero() {
         </Text>
       </Flex>
       <Container
-       
         w="90%"
         centerContent
         display="flex"
         flexDirection={{ base: "column-reverse", md: "row" }}
-        justifyContent='space-around'
+        justifyContent="space-around"
       >
         <Flex direction="column " w="100%" p="1rem">
           <Text
@@ -69,13 +69,10 @@ export default function Hero() {
             </Text>
           </Flex>
         </Flex>
-        <Container
-          h="250px"
-          w="244px"
-          justify="center"
-          mt="1rem"
-         
-        >
+        <Container h="250px" w="244px" justify="center" mt="1rem">
+          {/* <Flex border="1px solid white" justify="center">
+            <SpinnerRoundFilled />
+          </Flex> */}
           <Spline scene="https://prod.spline.design/mJlnC1uULdyCH65m/scene.splinecode" />
         </Container>
       </Container>
