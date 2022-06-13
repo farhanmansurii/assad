@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Project() {
   return (
     <>
-      <Container w="400px" p="5">
+      <Container w="350px" p="5">
         <Image
           src="https://images.unsplash.com/photo-1653894604359-22dbdb074d4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
           borderRadius="xl"

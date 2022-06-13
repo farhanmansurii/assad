@@ -72,8 +72,8 @@ export default function Hero() {
         <Container h="250px" w="244px" justify="center" mt="1rem">
           {/* <Flex border="1px solid white" justify="center">
             <SpinnerRoundFilled />
-          </Flex> */}
-          <Spline scene="https://prod.spline.design/7LEhluOwCbHSGo2K/scene.splinecode" />
+          </Flex> */}{" "}
+          <Spline scene="https://prod.spline.design/mJlnC1uULdyCH65m/scene.splinecode" />
         </Container>
       </Container>
     </>
