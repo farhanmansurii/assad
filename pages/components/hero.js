@@ -5,10 +5,12 @@ import {
   Container,
   Button,
 } from "@chakra-ui/react";
-import Spline from "@splinetool/react-spline";
+
 import { SpinnerRoundFilled } from "spinners-react";
 
 import dynamic from "next/dynamic";
+
+import Spline from "@splinetool/react-spline";
 
 export default function Hero() {
   return (
@@ -70,10 +72,7 @@ export default function Hero() {
           </Flex>
         </Flex>
         <Container h="250px" w="244px" justify="center" mt="1rem">
-          {/* <Flex border="1px solid white" justify="center">
-            <SpinnerRoundFilled />
-          </Flex> */}{" "}
-          <Spline scene="https://prod.spline.design/mJlnC1uULdyCH65m/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/LRb57dinu5r3QlA6/scene.splinecode" />
         </Container>
       </Container>
     </>
