@@ -5,7 +5,7 @@ import {
   Container,
   Button,
 } from "@chakra-ui/react";
-
+import Spline from "@splinetool/react-spline";
 export default function Hero() {
   return (
     <>
@@ -66,7 +66,7 @@ export default function Hero() {
           </Flex>
         </Flex>
         <Container h="250px" w="244px" justify="center" mt="1rem">
-          {/* <Spline scene="https://prod.spline.design/LRb57dinu5r3QlA6/scene.splinecode" /> */}
+          <Spline scene="https://prod.spline.design/LRb57dinu5r3QlA6/scene.splinecode" />
         </Container>
       </Container>
     </>
