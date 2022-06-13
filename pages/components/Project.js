@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import React from "react";
-
+import Link from "next/link";
 export default function Project() {
   return (
     <>
@@ -24,12 +24,12 @@ export default function Project() {
           <Flex fontSize="md" my="0.5rem" justify="space-between">
             <Text> html css javascript </Text>
             <Flex gap="2">
-              <a href="/">
+              <Link href="/">
                 <AiFillGithub size="25px" />
-              </a>
-              <a href="/">
+              </Link>
+              <Link href="/">
                 <AiOutlineLink size="25px" />
-              </a>
+              </Link>
             </Flex>
           </Flex>
         </Flex>

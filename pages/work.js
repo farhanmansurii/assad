@@ -9,9 +9,12 @@ export default function work() {
         {" "}
         Works ive done
       </Text>
-      {title.map((title) => (
-        <Project title={title} />
-      ))}
+      <Project />
+      <Project />
+      <Project />
+      <Project />
+      <Project />
+      <Project />
     </Flex>
   );
 }
