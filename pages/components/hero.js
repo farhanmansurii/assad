@@ -12,7 +12,7 @@ import dynamic from "next/dynamic";
 export default function Hero() {
   return (
     <>
-      <Flex justify="center" mx="5%" >
+      <Flex justify="center" mx="5%"  mt='4rem'>
         <Text
           mt="1rem"
           mb="3rem"
