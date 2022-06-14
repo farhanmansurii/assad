@@ -7,7 +7,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
-import ContactMe from "./components/Contactme";
+import ContactMe from "../components/Contactme";
 
 const About = () => {
   return (

@@ -1,8 +1,8 @@
 import { Text, Flex, Container, Box, Image } from "@chakra-ui/react";
 import React from "react";
-import projects from "./components/data/images/projects.json";
-import Project from "./components/Project";
-import { ProjectCard } from "./components/ProjectCard";
+import projects from "../components/data/images/projects.json";
+
+import { ProjectCard } from "../components/ProjectCard";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 export default function work() {

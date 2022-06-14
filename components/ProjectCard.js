@@ -13,10 +13,6 @@ import { Button } from "@chakra-ui/button";
 import PropTypes from "prop-types";
 import React from "react";
 
-export const ProjectCard = () => {
-  return <div>ProjectCard</div>;
-};
-
 export const ProjectCard = ({
   title,
   description,
