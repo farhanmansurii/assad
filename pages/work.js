@@ -6,7 +6,7 @@ import Image from "next/image";
 import github from "./components/data/images/github2.png";
 import Project from "./components/Project";
 import { projectsData } from "./components/data/projects";
-const title = ["hi ", " hello "];
+
 export default function work() {
   return (
     <Flex direction="column" mt="5rem" spacing={3}>
@@ -16,7 +16,7 @@ export default function work() {
       </Text>
       {projectsData &&
         projectsData.map((n) => (
-          <Container w="400px" p="5">
+          <Container key={n.id} w="400px" p="5">
             <Image src={github} borderRadius="xl" alt="hi" />
             <Flex direction="column" my="1rem" spacing="1">
               <Text fontSize="lg"> {n.title}</Text>
