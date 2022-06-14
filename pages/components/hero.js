@@ -26,6 +26,7 @@ export default function Hero() {
         </Text>
       </Flex>
       <Container
+        minH="70vh"
         w="90%"
         centerContent
         display="flex"
@@ -35,7 +36,7 @@ export default function Hero() {
         <Flex direction="column " w="100%" p="1rem">
           <Text
             fontWeight="light"
-            fontSize={["3xl", "4xl", "5xl", "6xl"]}
+            fontSize={["4xl", "5xl", "5xl", "6xl"]}
             textTransform="capitalize"
             lineHeight={0.9}
           >
@@ -45,7 +46,7 @@ export default function Hero() {
           <Flex direction="column" w="100%">
             <Text
               py={3}
-              fontSize="10px"
+              fontSize="12px"
               fontWeight="bold"
               textTransform="uppercase"
               letterSpacing="1px"
@@ -55,18 +56,14 @@ export default function Hero() {
               software tester)
             </Text>
 
-            <Text
-              fontSize={["sm", "sm", "md", "lg"]}
-              textTransform="lowercase"
-              lineHeight={1}
-            >
+            <Text fontSize="lg" textTransform="lowercase" lineHeight={1}>
               hola welcome to my, corner of the internet, where you can find my
               works, thoughts, favourite anime and other random things.
             </Text>
           </Flex>
         </Flex>
         <Container h="250px" w="244px" justify="center" mt="1rem">
-          <Spline scene="https://prod.spline.design/LRb57dinu5r3QlA6/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/pJUce1tFIbYkKtGO/scene.splinecode" />
         </Container>
       </Container>
     </>

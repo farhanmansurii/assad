@@ -4,12 +4,12 @@ import {
   Container,
   Divider,
   IconButton,
-  Link,
   Stack,
   useColorModeValue,
   Text,
   Flex,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 export default function Footer() {

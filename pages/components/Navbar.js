@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
-const Links = ["about", "work"];
+const Links = [" about", "work"];
 const NavLink = ({ children }) => (
   <Link
     px={2}
@@ -64,9 +64,16 @@ export default function Navbar() {
               mx="2rem"
             >
               <Link href="/">home</Link>
+
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))}
+              <Link
+                href="https://drive.google.com/file/d/1I6xWNMNJLKV6A_qhthHE5YbBKcKzJ5vU/view?usp=sharing"
+                target="_blank"
+              >
+                my cv
+              </Link>
             </HStack>
 
             <Menu
