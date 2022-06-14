@@ -26,7 +26,7 @@ export default function Project() {
           <Flex fontSize="md" my="0.5rem" justify="space-between">
             <Text> html css javascript </Text>
             <Flex gap="2">
-              <Link href={data.link}>
+              <Link href="/">
                 <AiFillGithub size="25px" />
               </Link>
               <Link href="/">
