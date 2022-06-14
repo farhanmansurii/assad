@@ -19,7 +19,7 @@ export default function Project() {
           alt="hi"
         />
         <Flex direction="column" my="1rem">
-          <Text fontSize="lg"> Title</Text>
+          <Text fontSize="lg"> {title}</Text>
           <Text fontSize="md">Description</Text>
           <Flex fontSize="md" my="0.5rem" justify="space-between">
             <Text> html css javascript </Text>

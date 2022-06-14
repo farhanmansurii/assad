@@ -9,9 +9,8 @@ import Spline from "@splinetool/react-spline";
 export default function Hero() {
   return (
     <>
-      <Flex justify="center" mx="5%" mt="4rem">
+      <Flex justify="center" mx="5%" mt="4.2rem">
         <Text
-          mt="1rem"
           mb="3rem"
           px="2rem"
           pt="0.5rem"
@@ -36,7 +35,7 @@ export default function Hero() {
         <Flex direction="column " w="100%" p="1rem">
           <Text
             fontWeight="light"
-            fontSize={["4xl", "5xl", "5xl", "6xl"]}
+            fontSize={["3xl", "5xl", "5xl", "6xl"]}
             textTransform="capitalize"
             lineHeight={0.9}
           >
@@ -46,7 +45,7 @@ export default function Hero() {
           <Flex direction="column" w="100%">
             <Text
               py={3}
-              fontSize="12px"
+              fontSize="10px"
               fontWeight="bold"
               textTransform="uppercase"
               letterSpacing="1px"
@@ -56,13 +55,13 @@ export default function Hero() {
               software tester)
             </Text>
 
-            <Text fontSize="lg" textTransform="lowercase" lineHeight={1}>
+            <Text fontSize="md" textTransform="lowercase" lineHeight={1}>
               hola welcome to my, corner of the internet, where you can find my
               works, thoughts, favourite anime and other random things.
             </Text>
           </Flex>
         </Flex>
-        <Container h="250px" w="244px" justify="center" mt="1rem">
+        <Container h="250px" w="244px" justify="center">
           <Spline scene="https://prod.spline.design/pJUce1tFIbYkKtGO/scene.splinecode" />
         </Container>
       </Container>
