@@ -1,38 +1,16 @@
+
 [
-  {
-    "id": 1,
-    "title": " Farhan Mansuri Portfolio ",
-    "description": "hi first project",
-    "tools":"NextJS ChakraUI FramerMotion ThreeJS",
-    "live": "https://farhan-mansuri.vercel.app/"
-  },
-  {
-    "id": 2,
-    "img": "/pages/components/data/images/github2.png",
-    "title": "   Github 2.0 ",
-    "description": "hi first project",
-    "tools":"ReactJS TailwindCSS",
-    "live": "https://morning-retreat-49586.herokuapp.com/"
-  },
-  {
-    "id": 3,
-    "title": " Calculator Minimal ",
-    "description": "hi first project",
-    "tools":"HTML CSS JavaScript TailwindCSS",
-    "live": "https://calculator-minimal.vercel.app/"
-  },
-  {
-    "id": 4,
-    "title": " JavaScript Multiplayer Shooter Game ",
-    "description": "hi first project",
-    "tools":"HTML CSS JavaScript",
-    "live": "https://codepen.io/farhanmansurii/pen/JjMmoMg"
-  },
-  {
-    "id": 5,
-    "title": " Hypebeast Shoe Store",
-    "description": "hi first project", 
-    "tools":"HTML CSS JavaScript",
-    "live": "https://hypebeastshoestore.herokuapp.com/"
-  }
-]
+    {
+      "logo": null,
+      "title": "Guestbook",
+      "description":
+        "My own personal guestbook which I invite you to sign! Created with Next.js + Prisma + Typescript + NextAuth for authentication. Inspired by Lee Robinson.",
+      
+      "live": "https://gregs-guestbook.vercel.app/",
+      "proto": null,
+      "repo": "https://github.com/gregogun/my-guestbook",
+      "id":1,
+      "feature": true
+    }
+  ]
+
