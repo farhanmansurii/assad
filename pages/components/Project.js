@@ -9,6 +9,7 @@ import {
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import React from "react";
 import Link from "next/link";
+import { isDragActive } from "framer-motion";
 export default function Project() {
   return (
     <>
@@ -25,7 +26,7 @@ export default function Project() {
           <Flex fontSize="md" my="0.5rem" justify="space-between">
             <Text> html css javascript </Text>
             <Flex gap="2">
-              <Link href="/">
+              <Link href={data.link}>
                 <AiFillGithub size="25px" />
               </Link>
               <Link href="/">
