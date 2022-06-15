@@ -6,7 +6,8 @@ import {
   List,
   ListItem,
   Text,
-  VStack,
+  Container,
+  Flex,
 } from "@chakra-ui/layout";
 import Icon from "@chakra-ui/icon";
 import { Button } from "@chakra-ui/button";
@@ -23,26 +24,14 @@ export const ProjectCard = ({
   ...props
 }) => {
   return (
-    <Box
-      as="li"
-      mb={{ base: "2rem", "2xl": 0 }}
-      mx="1rem"
-      listStyleType="none"
-      border="1px solid"
-      w={{ base: "90%", md: "30rem" }}
-      {...props}
-    >
-      <Center borderRadius={0} mb="3rem" w="100%" h="8rem">
-        <Heading as="p" variant="h3">
-          {title}
-        </Heading>
-      </Center>
-      <VStack px="2rem" align="start" spacing="2rem">
-        <Heading data-testid="project-title" as="h3" variant="h3">
-          {title}
-        </Heading>
-        <Text data-testid="project-description">{description}</Text>
-        <List display="flex" flexDirection="row"></List>
+    <Container w="400px" p="5">
+      <Flex direction="column" my="1rem">
+        <Text fontSize="lg"> {title}</Text>
+        <Text fontSize="md">{description}</Text>
+        <List display="flex" flexDirection="row">
+          {" "}
+          <Text> html css javascript </Text>{" "}
+        </List>
         <HStack pb="2rem">
           {live && (
             <Button as="a" href={live} variant="primary">
@@ -58,8 +47,8 @@ export const ProjectCard = ({
             View Code
           </Button>
         </HStack>
-      </VStack>
-    </Box>
+      </Flex>
+    </Container>
   );
 };
 
