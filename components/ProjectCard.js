@@ -13,20 +13,21 @@ import git from "./data/images/github2.png";
 import { Button } from "@chakra-ui/button";
 import PropTypes from "prop-types";
 import React from "react";
-import Image from "next/image";
-
+import Image from "next/dist/client/image";
 export const ProjectCard = ({
-  image,
+  headr,
   title,
   description,
   tools,
   live,
+  source,
   proto,
   repo,
   ...props
 }) => {
   return (
     <Container w="400px" p="5">
+      <Image src={git} />
       <Flex direction="column" my="1rem">
         <Text fontSize="lg"> {title}</Text>
         <Text fontSize="md">{description}</Text>
@@ -41,13 +42,15 @@ export const ProjectCard = ({
             </Button>
           )}
           {proto && (
-            <Button as="a" href={proto} variant="primary">
+            <Button as="a" href={visit} variant="primary">
               Prototype
             </Button>
           )}
-          <Button as="a" href={repo} variant="secondary">
-            View Code
-          </Button>
+          {source && (
+            <Button as="a" href={source} variant="secondary">
+              View Code
+            </Button>
+          )}
         </HStack>
       </Flex>
     </Container>
