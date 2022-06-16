@@ -1,6 +1,6 @@
 import { Text, Flex, Container, Box, Image } from "@chakra-ui/react";
 import React from "react";
-import projects from "../components/data/images/projects.json";
+import { projects } from "../components/data/images/projectdata";
 
 import { ProjectCard } from "../components/ProjectCard";
 import Link from "next/link";

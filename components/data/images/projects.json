@@ -1,7 +1,7 @@
 
 [
     {
-      "logo": null,
+      "image": "https://images.unsplash.com/photo-1652809096869-55b40bd14ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
       "title": "Farhan's Portfolio",
       "description":
         "Personal portfolio made using NextJS , Chakra UI , Framer Motion",
@@ -23,7 +23,7 @@
       "id":1
     },
     {
-      "logo": null,
+      "image": "https://images.unsplash.com/photo-1654691517081-cb0c6d0158fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "title": "Guestbook",
       "description":
         "My own personal guestbook which I invite you to sign! Created with Next.js + Prisma + Typescript + NextAuth for authentication. Inspired by Lee Robinson.",
