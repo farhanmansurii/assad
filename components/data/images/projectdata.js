@@ -1,41 +1,37 @@
-import github from "./github2.png";
+import github from "../images/github2.png";
+import calculatorminimal from "../images/calculatorminimal.png";
+import hypebeast from "../images/hypebeast.png";
+import javascript from "../images/javascript.png";
+
 export const projects = [
   {
-    title: "MERN Memories",
-    description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    image: { github },
-    source: "https://google.com",
-    visit: "https://google.com",
-    id: 0,
-  },
-  {
-    title: "E-Commerce",
-    description:
-      "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-    image: "/github.png",
-
-    source: "https://google.com",
-    visit: "https://google.com",
     id: 1,
+    title: "Github 2.0",
+    description:
+      " Search a github profile and its repositories and the users details using Github API  ",
+    imageSrc: github,
+    url: "react-weather",
   },
   {
-    title: "WebRTC App",
-    description:
-      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-
-    source: "https://google.com",
-    visit: "https://google.com",
     id: 2,
+    title: "Calculator",
+    description: "Calculator made by inspiration from iphones calculator ",
+    imageSrc: calculatorminimal,
+    url: "install-node",
   },
   {
-    title: "Unichat",
-    description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: "/images/4.jpg",
-
-    source: "https://google.com",
-    visit: "https://google.com",
     id: 3,
+    title: "Javascript Shooter Game",
+    description:
+      "two player javascript shooter multiplayer game consists of best of 5 contest  ",
+    imageSrc: javascript,
+    url: "use-state-hook",
+  },
+  {
+    id: 4,
+    title: "Hypebeast Shoe Store ",
+    description: "Landing page of a luxury shoe selling website",
+    imageSrc: hypebeast,
+    url: "react-parallax",
   },
 ];
