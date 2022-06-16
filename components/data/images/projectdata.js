@@ -2,6 +2,21 @@ import github from "../images/github2.png";
 import calculatorminimal from "../images/calculatorminimal.png";
 import hypebeast from "../images/hypebeast.png";
 import javascript from "../images/javascript.png";
+import {
+  chakra,
+  css3,
+  electron,
+  figma,
+  html5,
+  js,
+  nextjs,
+  nodejs,
+  react,
+  socketIO,
+  storybook,
+  tailwind,
+  typescript,
+} from "./tools";
 
 export const projects = [
   {
@@ -10,6 +25,7 @@ export const projects = [
     description:
       " Search a github profile and its repositories and the users details using Github API  ",
     imageSrc: github,
+    tools: [react, tailwind],
     url: "react-weather",
   },
   {
@@ -18,6 +34,7 @@ export const projects = [
     description: "Calculator made by inspiration from iphones calculator ",
     imageSrc: calculatorminimal,
     url: "install-node",
+    tools: [html5, css3, js],
   },
   {
     id: 3,
@@ -26,6 +43,7 @@ export const projects = [
       "two player javascript shooter multiplayer game consists of best of 5 contest  ",
     imageSrc: javascript,
     url: "use-state-hook",
+    tools: [html5, css3, js],
   },
   {
     id: 4,
@@ -33,5 +51,6 @@ export const projects = [
     description: "Landing page of a luxury shoe selling website",
     imageSrc: hypebeast,
     url: "react-parallax",
+    tools: [html5, css3, js],
   },
 ];

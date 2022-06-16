@@ -10,7 +10,6 @@ export default function work() {
         <Text textAlign="center" fontSize="2xl">
           Works ive done
         </Text>
-
         <Project />
       </Flex>
     </>
