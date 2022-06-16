@@ -9,7 +9,7 @@ const Project = () => {
   return (
     <Container align="center">
       {projects.map(({ id, title, description, imageSrc, url }) => (
-        <Container w="320px" p="2" m="1em">
+        <Container key={id} w="320px" p="2" m="1em">
           <Tilt>
             <Image src={imageSrc} alt={title} />
           </Tilt>
@@ -21,7 +21,7 @@ const Project = () => {
           </Text>
           <Flex justify="space-between">
             <Text m={1}> html css javascript </Text>{" "}
-            <Link key={id} href={url}>
+            <Link href={url}>
               <Flex justify="space-between" align="normal" gap="3">
                 <AiFillGithub size="32px" mr="3" />
                 <AiOutlineLink size="32px" />
