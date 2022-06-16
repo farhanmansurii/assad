@@ -9,12 +9,14 @@ import {
   Container,
   Flex,
 } from "@chakra-ui/layout";
-import Icon from "@chakra-ui/icon";
+import git from "./data/images/github2.png";
 import { Button } from "@chakra-ui/button";
 import PropTypes from "prop-types";
 import React from "react";
+import Image from "next/image";
 
 export const ProjectCard = ({
+  image,
   title,
   description,
   tools,
@@ -34,7 +36,7 @@ export const ProjectCard = ({
         </List>
         <HStack pb="2rem">
           {live && (
-            <Button as="a" href={live} variant="primary">
+            <Button as="a" href={visit} variant="primary">
               Visit Site
             </Button>
           )}
@@ -53,7 +55,7 @@ export const ProjectCard = ({
 };
 
 ProjectCard.propTypes = {
-  logo: PropTypes.element,
+  image: PropTypes.element,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   live: PropTypes.string,
