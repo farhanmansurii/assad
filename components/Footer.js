@@ -20,7 +20,6 @@ export default function Footer() {
         ml="1rem"
         mr="1.8rem"
         bottom={0}
-        color={useColorModeValue("orange", "purple")}
         borderTop="2px solid "
         fontFamily="Ogg"
       ></Flex>
@@ -63,9 +62,8 @@ export default function Footer() {
         </Stack>
         <Flex direction="row" gap="1">
           <Text fontSize="sm" color="subtle" align="center" mb="2rem">
-            &copy; 2022 designed & coded with ♥ by
+            &copy; 2022 designed & coded with ♥ by farhan mansuri
           </Text>
-          <Text fontFamily="Ogg"> farhan mansuri</Text>
         </Flex>
       </Stack>
     </Container>

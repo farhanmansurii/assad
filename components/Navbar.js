@@ -85,6 +85,8 @@ export default function Navbar() {
                 display={{ base: "flex", md: "none" }}
                 as={IconButton}
                 icon={<HamburgerIcon />}
+                color={useColorModeValue("#548CA8", "#262626")}
+                bg={useColorModeValue("#476072", "#50D8D7")}
                 mx="10%"
                 aria-label="Options"
               />
@@ -107,7 +109,11 @@ export default function Navbar() {
               </MenuList>
             </Menu>
             <Stack direction={"row"} spacing={7}>
-              <Button onClick={toggleColorMode}>
+              <Button
+                onClick={toggleColorMode}
+                color={useColorModeValue("#FBFFF1", "#262626")}
+                bg={useColorModeValue("#1EA896", "#e63946")}
+              >
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
             </Stack>

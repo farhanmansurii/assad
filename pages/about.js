@@ -26,7 +26,7 @@ const About = () => {
         <Text
           fontSize={["3xl", "4xl", "5xl", "5xl"]}
           textTransform="uppercase"
-          fontWeight="medium"
+          fontWeight="semibold"
           mb="2rem"
           fontFamily="Ogg"
         >
@@ -54,7 +54,7 @@ const About = () => {
         <Text
           fontSize={["3xl", "4xl", "5xl", "5xl"]}
           textTransform="uppercase"
-          fontWeight="medium"
+          fontWeight="semibold"
           mb="2rem"
           mt="4rem"
           fontFamily="Ogg"
@@ -82,7 +82,7 @@ const About = () => {
         <Text
           fontSize={["3xl", "4xl", "5xl", "5xl"]}
           textTransform="uppercase"
-          fontWeight="medium"
+          fontWeight="semibold"
           mb="2rem"
           mt="4rem"
           fontFamily="Ogg"

@@ -11,21 +11,21 @@ export default function Hero() {
     <>
       <Flex justify="center" mx="5%" mt="4.2rem">
         <Text
-          mb="3rem"
+          mb="1rem"
           px="2rem"
           pt="0.5rem"
           pb="0.5rem"
           align="center"
           borderRadius="2xl"
-          bg={useColorModeValue("#548CA8", "#cf4c2e")}
-          color={useColorModeValue("#476072", "#141414")}
+          color={useColorModeValue("#FBFFF1", "#262626")}
+          bg={useColorModeValue("#1EA896", "#e63946")}
           fontSize={["xs", "sm", "sm", "md"]}
         >
           hi I&apos;m a web developer based in Mumbai , India
         </Text>
       </Flex>
       <Container
-        minH="70vh"
+        minH="82vh"
         w="90%"
         centerContent
         display="flex"
@@ -38,7 +38,7 @@ export default function Hero() {
             fontSize={["5xl", "5xl", "6xl", "6xl"]}
             textTransform="capitalize"
             lineHeight={0.9}
-            color={useColorModeValue("#548CA8", "#ffb07b")}
+            color={useColorModeValue("#619465", "#A76D60")}
           >
             Farhan
           </Text>
@@ -49,7 +49,7 @@ export default function Hero() {
             lineHeight={0.9}
             fontStyle="italic"
             fontWeight="normal"
-            color={useColorModeValue("#548CA8", "#ffb07b")}
+            color={useColorModeValue("#9CBF9F", "#B7857B")}
           >
             mansuri
           </Text>
@@ -61,7 +61,7 @@ export default function Hero() {
               fontWeight="bold"
               textTransform="uppercase"
               letterSpacing="1px"
-              color={useColorModeValue("#548CA8", "#ffb07b")}
+              color={useColorModeValue("#B5CFB7", "#B7857B")}
             >
               Digital Craftsman(sometimes artist / web developer/ <br />
               software tester)

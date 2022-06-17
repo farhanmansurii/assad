@@ -4,8 +4,8 @@ import "@fontsource/inter";
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode("#f0e7db", "#141414")(props),
-      color: mode("#334257", "#e3cab6")(props),
+      bg: mode("#FBFFF1", "#262626")(props),
+      color: mode("#396A64", "#E0D0C1")(props),
     },
   }),
 };

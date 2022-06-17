@@ -23,8 +23,11 @@ export default function Newsletter() {
       >
         <Stack align={"center"} spacing={2}>
           <Text
-            textTransform={"uppercase"}
-            fontSize={["lg", "xl", "2xl", "3xl"]}
+            fontSize={["3xl", "4xl", "5xl", "5xl"]}
+            textTransform="uppercase"
+            fontWeight="medium"
+            mb="1.5rem"
+            fontFamily="Ogg"
           >
             Subscribe
           </Text>
@@ -42,7 +45,13 @@ export default function Newsletter() {
               outline: "none",
             }}
           />
-          <Button flex={"1 0 auto"}>Subscribe</Button>
+          <Button
+            flex={"1 0 auto"}
+            color={useColorModeValue("#FBFFF1", "#262626")}
+            bg={useColorModeValue("#1EA896", "#e63946")}
+          >
+            Subscribe
+          </Button>
         </Stack>
       </Stack>
     </Flex>
