@@ -11,7 +11,6 @@ export default function work() {
           fontSize={["3xl", "4xl", "5xl", "5xl"]}
           textTransform="uppercase"
           fontWeight="medium"
-          mb="2rem"
           textAlign="center"
           fontFamily="Ogg"
         >

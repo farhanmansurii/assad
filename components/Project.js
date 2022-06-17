@@ -58,7 +58,14 @@ const Project = () => {
                   <Text border="2px solid " px="1.4rem" py="0.4rem">
                     <Link href={url}>Source</Link>
                   </Text>
-                  <Text border="2px solid " px="1.4rem" py="0.4rem">
+                  <Text
+                    border="2px solid "
+                    px="1.4rem"
+                    py="0.4rem"
+                    color="#FBFFF1"
+                    bg="#396A64"
+                    _dark={{ bg: "#E0D0C1", color: "#262626" }}
+                  >
                     <Link href={live}>Live</Link>
                   </Text>
                 </Flex>

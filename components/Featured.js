@@ -64,18 +64,23 @@ const Featured = () => {
                   </List>
                 </Flex>
 
-                <Flex justify="space-between" gap="3">
-                  <Text border="2px solid " px="1.4rem" py="0.4rem">
-                    <Link href={url}>Source</Link>
-                  </Text>
-                  <Text
-                    px="1.4rem"
-                    py="0.4rem"
-                    bg="#1EA896"
-                    _dark={{ bg: "#e63946" }}
-                  >
-                    <Link href={live}>Live</Link>
-                  </Text>
+                <Flex gap="3">
+                  <Link href={url}>
+                    <Text border="2px solid " px="1.4rem" py="0.4rem">
+                      Source
+                    </Text>
+                  </Link>
+                  <Link href={live}>
+                    <Text
+                      px="1.4rem"
+                      pt="0.5rem"
+                      color="#FBFFF1"
+                      bg="#396A64"
+                      _dark={{ bg: "#E0D0C1", color: "#262626" }}
+                    >
+                      Live
+                    </Text>
+                  </Link>
                 </Flex>
               </Flex>
             </Container>
