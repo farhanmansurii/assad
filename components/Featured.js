@@ -8,6 +8,7 @@ import {
   ListItem,
   Icon,
   useColorModeValue,
+  useColorMode,
   Button,
 } from "@chakra-ui/react/";
 import { projects } from "./data/images/projectdata";
@@ -68,11 +69,10 @@ const Featured = () => {
                     <Link href={url}>Source</Link>
                   </Text>
                   <Text
-                    border="2px solid "
                     px="1.4rem"
                     py="0.4rem"
-                    color={useColorModeValue("#FBFFF1", "#262626")}
-                    bg={useColorModeValue("#1EA896", "#e63946")}
+                    bg="#1EA896"
+                    _dark={{ bg: "#e63946" }}
                   >
                     <Link href={live}>Live</Link>
                   </Text>
