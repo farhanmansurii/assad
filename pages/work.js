@@ -13,6 +13,7 @@ export default function work() {
           fontWeight="medium"
           mb="2rem"
           textAlign="center"
+          fontFamily="Ogg"
         >
           Works ive done
         </Text>

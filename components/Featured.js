@@ -20,12 +20,13 @@ const Featured = () => {
   return (
     <Flex direction="column" align="center" gap="0" minH="100vh" my="7rem">
       <Text
-        fontSize={["2xl", "3xl", "4xl", "4xl"]}
+        fontSize={["3xl", "4xl", "5xl", "5xl"]}
         textTransform="uppercase"
         fontWeight="medium"
         mb="1.5rem"
+        fontFamily="Ogg"
       >
-        My best works
+        Featured Works
       </Text>
       <Flex direction="row" flexWrap="wrap" align="center" gap="2em">
         {projects
@@ -39,7 +40,7 @@ const Featured = () => {
                   style={{ borderRadius: "xl", overflow: "hidden" }}
                 />
               </Tilt>
-              <Text fontSize="xl" fontWeight="semibold" m={2}>
+              <Text fontSize="2xl" m={2} fontFamily="Ogg">
                 {title}
               </Text>
               <Text fontSize="xs" m={1} align="left">

@@ -22,7 +22,6 @@ export default function Footer() {
         bottom={0}
         color={useColorModeValue("orange", "purple")}
         borderTop="2px solid "
-        borderTopColor={useColorModeValue("teal.400", "purple.500")}
         fontFamily="Ogg"
       ></Flex>
       <Divider orientation="horizontal" my="2rem" color="red" />
@@ -36,16 +35,12 @@ export default function Footer() {
               <Link href="/contact">contact</Link>
             </Stack>
           </ButtonGroup>
-          <ButtonGroup
-            variant="ghost"
-            color={useColorModeValue("#c3e3d1", "#9c795d")}
-          >
+          <ButtonGroup variant="ghost">
             <Stack direction="row " align="center">
               <IconButton
                 as="a"
                 href="https://www.linkedin.com/in/farhan-mansuri-620918219/"
                 target="_blank"
-                color={useColorModeValue("#c3e3d1", "#9c795d")}
                 aria-label="LinkedIn"
                 icon={<FaLinkedin fontSize="1.2rem" />}
               />
@@ -53,29 +48,25 @@ export default function Footer() {
                 as="a"
                 href="https://github.com/farhanmansurii"
                 target="_blank"
-                color={useColorModeValue("#c3e3d1", "#9c795d")}
                 aria-label="GitHub"
                 icon={<FaGithub fontSize="1.2rem" />}
               />
               <IconButton
                 as="a"
                 href="#"
-                color={useColorModeValue("#c3e3d1", "#9c795d")}
                 aria-label="Twitter"
                 icon={<FaTwitter fontSize="1.2rem" />}
               />
-              <IconButton
-                as="a"
-                href=""
-                color={useColorModeValue("#c3e3d1", "#9c795d")}
-                icon={<FiMail fontSize="1.2rem" />}
-              />
+              <IconButton as="a" href="" icon={<FiMail fontSize="1.2rem" />} />
             </Stack>
           </ButtonGroup>
         </Stack>
-        <Text fontSize="sm" color="subtle" align="center" mb="2rem">
-          &copy; 2022 designed & coded with ♥ by farhan mansuri
-        </Text>
+        <Flex direction="row" gap="1">
+          <Text fontSize="sm" color="subtle" align="center" mb="2rem">
+            &copy; 2022 designed & coded with ♥ by
+          </Text>
+          <Text fontFamily="Ogg"> farhan mansuri</Text>
+        </Flex>
       </Stack>
     </Container>
   );

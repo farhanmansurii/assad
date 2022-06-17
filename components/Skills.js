@@ -23,6 +23,7 @@ const Skills = () => {
         textTransform="uppercase"
         fontWeight="medium"
         mb="1.5rem"
+        fontFamily="Ogg"
       >
         Skills
       </Text>

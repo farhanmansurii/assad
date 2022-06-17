@@ -28,6 +28,7 @@ const About = () => {
           textTransform="uppercase"
           fontWeight="medium"
           mb="2rem"
+          fontFamily="Ogg"
         >
           Background
         </Text>
@@ -56,6 +57,7 @@ const About = () => {
           fontWeight="medium"
           mb="2rem"
           mt="4rem"
+          fontFamily="Ogg"
         >
           What ive been up to !
         </Text>
@@ -83,6 +85,7 @@ const About = () => {
           fontWeight="medium"
           mb="2rem"
           mt="4rem"
+          fontFamily="Ogg"
         >
           Interests
         </Text>

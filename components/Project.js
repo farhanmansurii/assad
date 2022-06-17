@@ -32,7 +32,7 @@ const Project = () => {
                 style={{ borderRadius: "xl", overflow: "hidden" }}
               />
             </Tilt>
-            <Text fontSize="2xl" fontWeight="regular" my={2}>
+            <Text fontSize="2xl" fontWeight="regular" my={2} fontFamily="Ogg">
               {title}
             </Text>
             <Text fontSize="xs" m={1} align="left">
