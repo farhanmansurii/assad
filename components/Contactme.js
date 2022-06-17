@@ -33,7 +33,7 @@ export default function ContactMe() {
         <Text
           fontSize={["3xl", "4xl", "5xl", "5xl"]}
           textTransform="uppercase"
-          fontWeight="medium"
+          fontWeight="semibold"
           fontFamily="Ogg"
         >
           Contact
@@ -51,12 +51,14 @@ export default function ContactMe() {
                     spacing={3}
                     alignItems="flex-start"
                     fontWeight="light"
+                    color={useColorModeValue("#396A64", "#E0D0C1")}
                   >
                     <Button
                       size="md"
                       height="48px"
                       variant="ghost"
                       leftIcon={<MdPhone size="20px" />}
+                      color={useColorModeValue("#396A64", "#E0D0C1")}
                     >
                       <Text fontWeight="hairline">+91-9867905275</Text>
                     </Button>
@@ -65,6 +67,7 @@ export default function ContactMe() {
                       size="md"
                       height="48px"
                       variant="ghost"
+                      color={useColorModeValue("#396A64", "#E0D0C1")}
                       leftIcon={<MdEmail size="20px" />}
                     >
                       <Text fontWeight="hairline">
@@ -75,6 +78,7 @@ export default function ContactMe() {
                       size="md"
                       height="48px"
                       variant="ghost"
+                      color={useColorModeValue("#396A64", "#E0D0C1")}
                       leftIcon={<MdLocationOn size="20px" />}
                     >
                       <Text fontWeight="hairline">Mumbai , India</Text>
@@ -90,6 +94,7 @@ export default function ContactMe() {
                   <IconButton
                     aria-label="facebook"
                     variant="ghost"
+                    color={useColorModeValue("#396A64", "#E0D0C1")}
                     icon={<MdFacebook size="28px" />}
                   />
                   <IconButton
@@ -97,6 +102,7 @@ export default function ContactMe() {
                     aria-label="github"
                     variant="ghost"
                     href="https://github.com/farhanmansurii"
+                    color={useColorModeValue("#396A64", "#E0D0C1")}
                     target="_blank"
                     icon={<BsGithub size="28px" />}
                   />
@@ -104,6 +110,7 @@ export default function ContactMe() {
                     aria-label="discord"
                     href="farhanmansuri#0961"
                     variant="ghost"
+                    color={useColorModeValue("#396A64", "#E0D0C1")}
                     icon={<BsDiscord size="28px" />}
                   />
                 </HStack>
@@ -136,7 +143,12 @@ export default function ContactMe() {
                       <Textarea placeholder="message" />
                     </FormControl>
                     <FormControl id="name" float="right">
-                      <Button variant="solid" _hover={{}}>
+                      <Button
+                        variant="solid"
+                        _hover={{}}
+                        color={useColorModeValue("#FBFFF1", "#262626")}
+                        bg={useColorModeValue("#1EA896", "#e63946")}
+                      >
                         Send Message
                       </Button>
                     </FormControl>
