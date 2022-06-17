@@ -18,7 +18,7 @@ import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
 const Featured = () => {
   return (
-    <Flex direction="column" align="center" gap="0" minH="100vh">
+    <Flex direction="column" align="center" gap="0" minH="100vh" my="7rem">
       <Text
         fontSize={["2xl", "3xl", "4xl", "4xl"]}
         textTransform="uppercase"
@@ -75,7 +75,7 @@ const Featured = () => {
           ))}
       </Flex>
       <Link href="/work">
-        <Text mt="2rem" px="5rem" py="0.5rem" borderRadius="xl">
+        <Text mt="2rem" border="2px solid " px="4.4rem" py="0.4rem">
           See more of my works
         </Text>
       </Link>
