@@ -26,14 +26,16 @@ export const projects = [
       " Search a github profile and its repositories and the users details using Github API  ",
     imageSrc: github,
     tools: [react, tailwind],
-    url: "react-weather",
+    live: "https://morning-retreat-49586.herokuapp.com/",
+    url: "https://github.com/farhanmansurii/githubclone",
   },
   {
     id: 2,
     title: "Calculator",
     description: "Calculator made by inspiration from iphones calculator ",
     imageSrc: calculatorminimal,
-    url: "install-node",
+    live: "https://calculator-minimal.vercel.app/",
+    url: "https://github.com/farhanmansurii/calculator-minimal",
     tools: [html5, css3, js],
   },
   {
@@ -42,7 +44,8 @@ export const projects = [
     description:
       "two player javascript shooter multiplayer game consists of best of 5 contest  ",
     imageSrc: javascript,
-    url: "use-state-hook",
+    live: "https://codepen.io/farhanmansurii/full/JjMmoMg",
+    url: "https://github.com/farhanmansurii/javascript-shooter-game",
     tools: [html5, css3, js],
   },
   {
@@ -50,7 +53,8 @@ export const projects = [
     title: "Hypebeast Shoe Store ",
     description: "Landing page of a luxury shoe selling website",
     imageSrc: hypebeast,
-    url: "react-parallax",
+    live: "https://hypebeastshoestore.herokuapp.com/",
+    url: "https://github.com/farhanmansurii/hypebeastshoestore",
     tools: [html5, css3, js],
   },
 ];
