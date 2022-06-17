@@ -66,12 +66,7 @@ const Featured = () => {
                   <Text border="2px solid " px="1.4rem" py="0.4rem">
                     <Link href={url}>Source</Link>
                   </Text>
-                  <Text
-                    px="1.4rem"
-                    py="0.4rem"
-                    color={useColorModeValue("#c3e3d1", "#131200")}
-                    bg={useColorModeValue("#00453d", "#9c795d")}
-                  >
+                  <Text border="2px solid " px="1.4rem" py="0.4rem">
                     <Link href={live}>Live</Link>
                   </Text>
                 </Flex>
@@ -80,14 +75,7 @@ const Featured = () => {
           ))}
       </Flex>
       <Link href="/work">
-        <Text
-          color={useColorModeValue("#c3e3d1", "#131200")}
-          bg={useColorModeValue("#00453d", "#9c795d")}
-          mt="2rem"
-          px="5rem"
-          py="0.5rem"
-          borderRadius="xl"
-        >
+        <Text mt="2rem" px="5rem" py="0.5rem" borderRadius="xl">
           See more of my works
         </Text>
       </Link>
