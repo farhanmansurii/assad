@@ -17,7 +17,7 @@ const Skills = () => {
   // convert object properties to array for mapping
   const skills = Object.values(tools).slice(0, 12);
   return (
-    <ChakraContainer w="100%" align="center" as="section" mt="3rem">
+    <ChakraContainer w="100%" h="70vh" align="center" as="section" mt="3rem">
       <Text
         fontSize={["3xl", "4xl", "5xl", "5xl"]}
         textTransform="uppercase"
