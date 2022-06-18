@@ -28,7 +28,7 @@ export default function Hero() {
         </Text>
       </Flex>
       <Container
-        minH="82vh"
+        minH="75vh"
         w="90%"
         centerContent
         display="flex"
