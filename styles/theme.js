@@ -1,6 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 import "@fontsource/inter";
+
 const styles = {
   global: (props) => ({
     body: {
