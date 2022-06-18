@@ -2,8 +2,10 @@ import github from "../images/github2.png";
 import calculatorminimal from "../images/calculatorminimal.png";
 import hypebeast from "../images/hypebeast.png";
 import javascript from "../images/javascript.png";
+import portfolio from "../images/portfolio.png";
 import {
   chakra,
+  chakraui,
   css3,
   electron,
   figma,
@@ -19,6 +21,16 @@ import {
 } from "./tools";
 
 export const projects = [
+  {
+    id: 1,
+    title: "Farhan Mansuri Portfolio ",
+    description:
+      " responsive and interactive website with dark mode and all about me and details about the works ive done",
+    imageSrc: portfolio,
+    tools: [nextjs, chakraui],
+    live: "https://farhanmansuri.vercel.app/",
+    url: "https://github.com/farhanmansurii/portfolio",
+  },
   {
     id: 1,
     title: "Github 2.0",
