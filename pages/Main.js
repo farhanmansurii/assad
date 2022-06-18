@@ -9,7 +9,7 @@ export default function Main() {
     <>
       {" "}
       <Head>
-        <title>Farhan's Portfolio </title>
+        <title>Farhan&apos;s Portfolio </title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Hero />
