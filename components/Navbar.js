@@ -16,6 +16,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import Link from "next/link";
+import "@fontsource/courier-prime";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 const Links = [" about", "work"];
 const NavLink = ({ children }) => (
@@ -51,28 +52,28 @@ export default function Navbar() {
           alignItems={"center"}
           justifyContent={"space-between"}
           mx="10%"
+          fontFamily="Courier Prime"
         >
           <Link href="/" ml="">
             Farhan Mansuri
           </Link>
 
-          <Flex alignItems={"center"}>
+          <Flex alignItems={"center"} fontFamily="Courier Prime">
             <HStack
               as={"nav"}
               spacing={4}
               display={{ base: "none", md: "flex" }}
               mx="2rem"
             >
-              <Link href="/">home</Link>
+              <Link href="/">&lt;home/&gt;</Link>
+              <Link href="/about">&lt;about/&gt;</Link>
+              <Link href="/work">&lt;work/&gt;</Link>
 
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
               <Link
                 href="https://drive.google.com/file/d/1I6xWNMNJLKV6A_qhthHE5YbBKcKzJ5vU/view?usp=sharing"
                 target="_blank"
               >
-                my cv
+                &lt;my_cv/&gt;
               </Link>
             </HStack>
 
@@ -92,19 +93,19 @@ export default function Navbar() {
               />
               <MenuList>
                 <Link href="/" ml="">
-                  <MenuItem>home</MenuItem>
+                  <MenuItem>&lt;home/&gt;</MenuItem>
                 </Link>
                 <Link href="/about" passHref>
-                  <MenuItem>about</MenuItem>
+                  <MenuItem>&lt;about/&gt;</MenuItem>
                 </Link>
                 <Link href="/work" passHref>
-                  <MenuItem>work</MenuItem>
+                  <MenuItem>&lt;work/&gt;</MenuItem>
                 </Link>
                 <Link
                   href="https://drive.google.com/file/d/1I6xWNMNJLKV6A_qhthHE5YbBKcKzJ5vU/view?usp=sharing"
                   target="_blank"
                 >
-                  <MenuItem>farhan&apos;s CV</MenuItem>
+                  <MenuItem> &lt;my_cv/&gt;</MenuItem>
                 </Link>
               </MenuList>
             </Menu>

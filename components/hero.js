@@ -14,7 +14,7 @@ export default function Hero() {
     <>
       <Flex justify="center" mx="5%" mt="4.2rem">
         <Text
-          mb="1rem"
+          mt="1rem"
           px="2rem"
           pt="0.5rem"
           pb="0.5rem"
