@@ -18,6 +18,7 @@ import {
 import Link from "next/link";
 import "@fontsource/courier-prime";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
+import useDownloader from "react-use-downloader";
 const Links = [" about", "work"];
 const NavLink = ({ children }) => (
   <Link
@@ -70,7 +71,7 @@ export default function Navbar() {
               <Link href="/work">&lt;work/&gt;</Link>
 
               <Link
-                href="https://drive.google.com/file/d/1I6xWNMNJLKV6A_qhthHE5YbBKcKzJ5vU/view?usp=sharing"
+                href="https://drive.google.com/file/d/1mGb3NJ2yQHFOXJl1Q2km0eqE199JaHJQ/view?usp=sharing"
                 target="_blank"
               >
                 &lt;my_cv/&gt;
@@ -102,7 +103,7 @@ export default function Navbar() {
                   <MenuItem>&lt;work/&gt;</MenuItem>
                 </Link>
                 <Link
-                  href="https://drive.google.com/file/d/1I6xWNMNJLKV6A_qhthHE5YbBKcKzJ5vU/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1mGb3NJ2yQHFOXJl1Q2km0eqE199JaHJQ/view?usp=sharing"
                   target="_blank"
                 >
                   <MenuItem> &lt;my_cv/&gt;</MenuItem>

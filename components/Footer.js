@@ -40,11 +40,13 @@ export default function Footer() {
                 as="a"
                 href="https://www.linkedin.com/in/farhan-mansuri-620918219/"
                 target="_blank"
+                color={useColorModeValue("#1EA896", "#e63946")}
                 aria-label="LinkedIn"
                 icon={<FaLinkedin fontSize="1.2rem" />}
               />
               <IconButton
                 as="a"
+                color={useColorModeValue("#1EA896", "#e63946")}
                 href="https://github.com/farhanmansurii"
                 target="_blank"
                 aria-label="GitHub"
@@ -53,10 +55,16 @@ export default function Footer() {
               <IconButton
                 as="a"
                 href="#"
+                color={useColorModeValue("#1EA896", "#e63946")}
                 aria-label="Twitter"
                 icon={<FaTwitter fontSize="1.2rem" />}
               />
-              <IconButton as="a" href="" icon={<FiMail fontSize="1.2rem" />} />
+              <IconButton
+                as="a"
+                color={useColorModeValue("#1EA896", "#e63946")}
+                href="mansurifarhanfm@gmail.com"
+                icon={<FiMail fontSize="1.2rem" />}
+              />
             </Stack>
           </ButtonGroup>
         </Stack>
