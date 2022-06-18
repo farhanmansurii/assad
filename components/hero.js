@@ -5,9 +5,10 @@ import {
   Container,
   Button,
 } from "@chakra-ui/react";
-import React, { Suspense } from "react";
-
-const Spline = React.lazy(() => import("@splinetool/react-spline"));
+import dynamic from "next/dynamic";
+const Spline = dynamic(() => import("@splinetool/react-spline"), {
+  ssr: false,
+});
 export default function Hero() {
   return (
     <>
@@ -76,9 +77,7 @@ export default function Hero() {
           </Flex>
         </Flex>
         <Container h="250px" w="244px" justify="center">
-          <Suspense fallback={<div>Loading...</div>}>
-            <Spline scene="https://prod.spline.design/pJUce1tFIbYkKtGO/scene.splinecode" />
-          </Suspense>
+          <Spline scene="https://prod.spline.design/pJUce1tFIbYkKtGO/scene.splinecode" />
         </Container>
       </Container>
     </>
