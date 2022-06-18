@@ -9,10 +9,15 @@ import {
 import React from "react";
 import ContactMe from "../components/Contactme";
 import Skills from "../components/Skills";
-
+import Head from "next/head";
 const About = () => {
   return (
     <>
+      {" "}
+      <Head>
+        <title>About Me </title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Container align="center" mb="4rem" mt="5rem">
         <Image
           src="https://i.imgur.com/mRuTw7R.jpg?1"
