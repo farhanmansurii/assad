@@ -3,6 +3,7 @@ import calculatorminimal from "../images/calculatorminimal.png";
 import hypebeast from "../images/hypebeast.png";
 import javascript from "../images/javascript.png";
 import portfolio from "../images/portfolio.png";
+import todo from "../images/todo.png";
 import {
   chakra,
   chakraui,
@@ -33,6 +34,16 @@ export const projects = [
   },
   {
     id: 1,
+    title: "Todo With Firebase",
+    description:
+      "Notes app with Auth and Lets user store their notes or list with database functionality ",
+    imageSrc: todo,
+    tools: [react],
+    live: "https://todo-farhan.vercel.app/",
+    url: "https://github.com/farhanmansurii/todojs",
+  },
+  {
+    id: 2,
     title: "Github 2.0",
     description:
       " Search a github profile and its repositories and the users details using Github API  ",
@@ -42,7 +53,7 @@ export const projects = [
     url: "https://github.com/farhanmansurii/githubclone",
   },
   {
-    id: 2,
+    id: 3,
     title: "Calculator",
     description: "Calculator made by inspiration from iphones calculator ",
     imageSrc: calculatorminimal,
@@ -51,7 +62,7 @@ export const projects = [
     tools: [html5, css3, js],
   },
   {
-    id: 3,
+    id: 4,
     title: "Javascript Shooter Game",
     description:
       "two player javascript shooter multiplayer game consists of best of 5 contest  ",
@@ -61,7 +72,7 @@ export const projects = [
     tools: [html5, css3, js],
   },
   {
-    id: 4,
+    id: 5,
     title: "Hypebeast Shoe Store ",
     description: "Landing page of a luxury shoe selling website",
     imageSrc: hypebeast,

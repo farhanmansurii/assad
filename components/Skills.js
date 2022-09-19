@@ -41,12 +41,12 @@ const Skills = () => {
         gap={5}
         as="ul"
       >
-        {skills.map((skill) => (
+        {skills.map((skill,index) => (
           <Skill
+            key={index}
             name={skill.name}
             icon={skill.icon}
             color={skill.color}
-            key={skill.id}
           />
         ))}
       </Grid>

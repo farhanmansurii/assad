@@ -6,10 +6,29 @@ import {
   Button,
 } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
+import React from 'react';
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: false,
+  ssr: true,
 });
 export default function Hero() {
+  const [isLoading,setIsLoading]= React.useState(true);
+  const [url,setUrl]=React.useState("");
+  React.useEffect(()=>{
+      setIsLoading(false);
+      setUrl("https://prod.spline.design/pJUce1tFIbYkKtGO/scene.splinecode");
+
+    return()=>{
+      
+    }
+  },[])
+
+  const Loader = ()=>{
+    console.log('Loading')
+    return(
+    <div>
+    <h1>Loading....</h1>
+    </div>
+  )}
   return (
     <>
       <Flex justify="center" mx="5%" mt="4.2rem">
@@ -77,9 +96,8 @@ export default function Hero() {
           </Flex>
         </Flex>
         <Container h="250px" w="244px" justify="center">
-          <Spline scene="https://prod.spline.design/pJUce1tFIbYkKtGO/scene.splinecode" />
+          <Spline scene={url} />
         </Container>
-      </Container>
-    </>
+      </Container></>
   );
 }

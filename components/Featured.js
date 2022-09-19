@@ -50,8 +50,8 @@ const Featured = () => {
               <Flex justify="space-between" direction="column">
                 <Flex>
                   <List display="flex" flexDirection="row">
-                    {tools.map((tool) => (
-                      <ListItem key={tool.id} p="0.5rem">
+                    {tools.map((tool,index) => (
+                      <ListItem key={index} p="0.5rem">
                         <Icon
                           aria-label={tool.name}
                           transitionDuration="400ms"

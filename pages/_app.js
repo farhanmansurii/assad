@@ -4,7 +4,9 @@ import theme from "../styles/theme";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
+import React from 'react';
 function MyApp({ Component, pageProps, router }) {
+  
   return (
     <ChakraProvider theme={theme}>
       <motion.div
