@@ -33,7 +33,7 @@ export const projects = [
     url: "https://github.com/farhanmansurii/portfolio",
   },
   {
-    id: 1,
+    id: 2,
     title: "Todo With Firebase",
     description:
       "Notes app with Auth and Lets user store their notes or list with database functionality ",
@@ -43,7 +43,7 @@ export const projects = [
     url: "https://github.com/farhanmansurii/todojs",
   },
   {
-    id: 2,
+    id: 3,
     title: "Github 2.0",
     description:
       " Search a github profile and its repositories and the users details using Github API  ",
@@ -53,7 +53,7 @@ export const projects = [
     url: "https://github.com/farhanmansurii/githubclone",
   },
   {
-    id: 3,
+    id: 4,
     title: "Calculator",
     description: "Calculator made by inspiration from iphones calculator ",
     imageSrc: calculatorminimal,
@@ -62,7 +62,7 @@ export const projects = [
     tools: [html5, css3, js],
   },
   {
-    id: 4,
+    id: 5,
     title: "Javascript Shooter Game",
     description:
       "two player javascript shooter multiplayer game consists of best of 5 contest  ",
@@ -72,7 +72,7 @@ export const projects = [
     tools: [html5, css3, js],
   },
   {
-    id: 5,
+    id: 6,
     title: "Hypebeast Shoe Store ",
     description: "Landing page of a luxury shoe selling website",
     imageSrc: hypebeast,
