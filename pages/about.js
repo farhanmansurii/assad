@@ -24,7 +24,7 @@ const About = () => {
           alt="farhan mansuri"
           border="2px solid"
           borderColor={useColorModeValue("#c3e3d1", "#9c795d")}
-          w="8rem" placeholder="blur"
+          w="8rem"
           borderRadius="99px"
           my="2rem"
         />
