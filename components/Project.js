@@ -28,7 +28,7 @@ const Project = () => {
             <Tilt>
               <Image
                 src={imageSrc}
-                alt={title}
+                alt={title} placeholder="blur"
                 style={{ borderRadius: "xl", overflow: "hidden" }}
               />
             </Tilt>

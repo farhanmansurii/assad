@@ -5,8 +5,9 @@ import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import React from 'react';
+import NextNProgress from 'nextjs-progressbar';
 function MyApp({ Component, pageProps, router }) {
-  
+
   return (
     <ChakraProvider theme={theme}>
       <motion.div
@@ -22,7 +23,7 @@ function MyApp({ Component, pageProps, router }) {
           },
         }}
       >
-        {" "}
+        <NextNProgress color="#e63946" options={{ easing: 'ease', speed: 500 ,showSpinner: false}} startPosition={0.3} stopDelayMs={200} height={5} showOnShallow={true} />
         <Navbar />
         <Component {...pageProps} />
         <Footer />

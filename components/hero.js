@@ -3,32 +3,34 @@ import {
   useColorModeValue,
   Text,
   Container,
+  ButtonGroup,Stack,IconButton,
   Button,
 } from "@chakra-ui/react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 import dynamic from "next/dynamic";
 import React from 'react';
-const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: true,
-});
+import Spline from '@splinetool/react-spline';
 export default function Hero() {
-  const [isLoading,setIsLoading]= React.useState(true);
-  const [url,setUrl]=React.useState("");
-  React.useEffect(()=>{
-      setIsLoading(false);
-      setUrl("https://prod.spline.design/pJUce1tFIbYkKtGO/scene.splinecode");
+  const [isLoading, setIsLoading] = React.useState(true);
+  const [url, setUrl] = React.useState("");
+  React.useEffect(() => {
+    setIsLoading(false);
+    setUrl("https://prod.spline.design/pJUce1tFIbYkKtGO/scene.splinecode");
 
-    return()=>{
-      
+    return () => {
+
     }
-  },[])
+  }, [])
 
-  const Loader = ()=>{
+  const Loader = () => {
     console.log('Loading')
-    return(
-    <div>
-    <h1>Loading....</h1>
-    </div>
-  )}
+    return (
+      <div>
+        <h1>Loading....</h1>
+      </div>
+    )
+  }
   return (
     <>
       <Flex justify="center" mx="5%" mt="4.2rem">
@@ -43,7 +45,7 @@ export default function Hero() {
           bg={useColorModeValue("#1EA896", "#e63946")}
           fontSize={["xs", "sm", "sm", "md"]}
         >
-          hi I&apos;m a web developer based in Mumbai , India
+          hi I&apos;m a front-end developer based in Mumbai , India
         </Text>
       </Flex>
       <Container
@@ -75,7 +77,7 @@ export default function Hero() {
           >
             mansuri
           </Text>
-
+         
           <Flex direction="column" w="100%">
             <Text
               py={3}
@@ -89,14 +91,48 @@ export default function Hero() {
               software tester)
             </Text>
 
-            <Text fontSize="md" textTransform="lowercase" lineHeight={1}>
-              hola welcome to my, corner of the internet, where you can find my
-              works, thoughts, favourite anime and other random things.
+            <Text fontSize="md"  _hover={{ fontsize:'lg'  }} textTransform="lowercase" lineHeight={1}>
+              hello welcome to my corner of the internet, where you can find my
+              personal projects ,ideas , favourite anime and other random things.
             </Text>
+            <ButtonGroup variant="ghost">
+            <Stack direction="row " align="center">
+              <IconButton
+                as="a"
+                href="https://www.linkedin.com/in/farhan-mansuri-620918219/"
+                target="_blank"
+                 color={useColorModeValue("#9CBF9F", "#B7857B")}
+                aria-label="LinkedIn"
+                icon={<FaLinkedin fontSize="1.2rem" />}
+              />
+              <IconButton
+                as="a"
+                 color={useColorModeValue("#9CBF9F", "#B7857B")}
+                href="https://github.com/farhanmansurii"
+                target="_blank"
+                aria-label="GitHub"
+                icon={<FaGithub fontSize="1.2rem" />}
+              />
+              <IconButton
+                as="a"
+                href="#"
+                 color={useColorModeValue("#9CBF9F", "#B7857B")}
+                aria-label="Twitter"
+                icon={<FaTwitter fontSize="1.2rem" />}
+              />
+              <IconButton
+                as="a"
+                color={useColorModeValue("#9CBF9F", "#B7857B")}
+                href="mansurifarhanfm@gmail.com"
+                icon={<FiMail fontSize="1.2rem" />}
+              />
+            </Stack>
+          </ButtonGroup>
           </Flex>
         </Flex>
         <Container h="250px" w="244px" justify="center">
-          <Spline scene={url} />
+
+        <Spline scene="https://prod.spline.design/844BtWLMwWlSucu0/scene.splinecode" />
         </Container>
       </Container></>
   );
